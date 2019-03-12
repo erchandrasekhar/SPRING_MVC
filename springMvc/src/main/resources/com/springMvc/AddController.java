@@ -25,12 +25,22 @@ public class AddController {
 	@RequestMapping("/add")
 	   public ModelAndView add(HttpServletRequest request,HttpServletResponse response)
 		{   
+	       ModelAndView mv=new ModelAndView();
+	       
+	       /*Getting value of text box from jsp by using request */
 		   String fName=request.getParameter("t1");
 		   String lName=request.getParameter("t2");
-		   request.setAttribute("fName", fName);
-		   request.setAttribute("lName", lName);
 		   
-		   return new ModelAndView("sucess");
+	   
+		  /* request.setAttribute("fName", fName);
+		   request.setAttribute("lName", lName);*/
+		   
+		   /*in spring mvc we can send data from controller to jsp by using ModelAndView object*/
+		   mv.setViewName("success");
+		   mv.addObject("fName", fName);
+		   mv.addObject("lName", lName);
+		   
+		   return mv;
 	    }
 		
 }

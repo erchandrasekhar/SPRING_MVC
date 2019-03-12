@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -8,12 +8,12 @@
 </head>
 <body>
        <pre>
-                            <h1>Success</h1>
+                            <h1>Success...</h1>
                             
-       FirstName::: <label><%=request.getAttribute("fName") %></label>
+       FirstName::: <label><%-- <%=request.getAttribute("fName") %> --%>${fName}</label>
        
        
-       LastName ::: <label><%=request.getAttribute("lName") %></label>
+       LastName ::: <label><%-- <%=request.getAttribute("lName") %> --%>${lName}</label>
        
        
        
