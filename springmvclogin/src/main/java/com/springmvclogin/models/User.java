@@ -18,6 +18,8 @@ public class User {
 		this.password = password;
 		this.confirmPassword = confirmPassword;
 	}
+	
+	/*getter and setter*/
 
 	public Integer getId() {
 		return id;
@@ -59,7 +61,7 @@ public class User {
 		this.confirmPassword = confirmPassword;
 	}
 	
-	/*getter and setter*/
+	
 	
 	
 	
