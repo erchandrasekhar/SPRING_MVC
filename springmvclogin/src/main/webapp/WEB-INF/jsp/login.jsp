@@ -1,3 +1,7 @@
+
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1" isELIgnored="false"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -130,8 +134,10 @@ body {
 					</div>
 					<div class="panel-body">
 						<div class="row">
+						
+						<h3 style="text-align: center;">${msgfail}</h3>
 							<div class="col-lg-12">
-								<form id="login-form" action="http://phpoll.com/login/process" method="post" role="form" style="display: block;">
+								<form id="login-form" action="login" method="post" role="form" style="display: block;">
 									<div class="form-group">
 										<input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
 									</div>
